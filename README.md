@@ -2,6 +2,6 @@
 
 link do gitPage:
 
-https://annienf17.github.io/goit-markup-hw-01
+https://annienf17.github.io/goit-markup-hw-02/
 
 
