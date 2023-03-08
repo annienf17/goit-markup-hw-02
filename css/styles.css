@@ -22,11 +22,11 @@
      color: var(--font-color);
      letter-spacing: var(--letter-spacing-03);
 }
-/* no underline */
+/* no underlined link */
  a {
      text-decoration: none;
 }
-/* no bullet list*/
+/* no bullet lists */
  li {
      list-style-type: none;
 }
