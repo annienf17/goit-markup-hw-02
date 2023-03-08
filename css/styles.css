@@ -1,20 +1,27 @@
 :root {
-    --body-bg-color: rgba(255, 255, 255, 1);
+    /* fonts */
     --font-color: rgb(33, 33, 33, 1);
     --font-family: 'Roboto', sans-serif;
+    --letter-spacing-02: 0.02em;
+    --letter-spacing-03: 0.03em;
+    --letter-spacing-06: 0.06em;
 
     /* colors */
+    --white-color: rgba(255, 255, 255, 1);
     --blue-color: rgba(33, 150, 243, 1);
     --light-grey-color: rgba(245, 244, 250, 1);
     --dark-grey-color: rgba(47, 48, 58, 1);
-    --white-color: rgba(255, 255, 255, 1);
+    --border-color: rgba(236, 236, 236, 1);
+
   }
 /* body of page */
 body {
-    background-color: var(--body-bg-color);
+    background-color: var(--white-color);
     font-family: var(--font-family);
     color: var(--font-color); 
+    letter-spacing: var(--letter-spacing-03);
 }
+
 /* no underline  */
 a {
     text-decoration: none;
@@ -23,14 +30,18 @@ a {
 li {
     list-style-type: none;
 }
+/* header style  */
+.header {
+    padding-top: 24px;
+    border-bottom: 1px solid var(--border-color);
+}
 /* logo top and footer styles */
 .logo {
 font-family: 'Raleway', sans-serif;
 font-size: 26px;
 font-weight: 700;
 line-height: 1.2;
-/* identical to box height */
-letter-spacing: 0.03em;
+letter-spacing: var(--letter-spacing-03)
 }
 /* logo style light-blue text */
 .logo > span {
@@ -63,6 +74,53 @@ a:active {
     background-color: var(--blue-color);
     color: var(--white-color);
     box-shadow: 0px 4px 4px 0px rgba(0,0,0, 0.15);
+    text-align: center;
+}
+/* front page headline  */
+.headline {
+    background-color: var(--dark-grey-color);
+    color: var(--white-color);
+    text-align: center;
+}
+.headline h1 {
+   font-size: 44px;
+   text-transform: uppercase;
+   line-height: 1.4;
+}
+/* col-4 list  */
+.col-4 {
+    font-size: 14px; 
+}
+.col-4 h3 {
+    font-weight: 700;
+    line-height: 1.15;  
+}
+.col-4 p {
+    line-height: 1.7;
+}
+
+/* activities section */
+.activities {
+    text-align: center;
+}
+.activities h2 {
+    font-size: 36px;
+    line-height: 1.2; 
+}
+/* team section */
+.team {
+    background-color: var(--light-grey-color);
+    text-align: center;
+}
+.team h2 {
+    font-size: 36px;
+    line-height: 1.2; 
+}
+.team li {
+    background-color: var(--white-color);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
 }
 /* portfolio buttons */
 .button-portfolio {
@@ -75,19 +133,26 @@ a:active {
     color: var(--white-color);
 }
 /* projects gallery */
+.projects-gallery li h2,
+.projects-gallery li p {
+    text-indent: 24px;
+}
 .projects-gallery h2 {
    font-size: 18px;
    line-height: 2;
    font-weight: 700; 
-   letter-spacing: 0.06em;
+   letter-spacing: var(--letter-spacing-06);
+   margin-bottom: 0px;
 }
 .projects-gallery p {
     color: rgba(117, 117, 117, 1);
-    letter-spacing: 0.03em;
+    letter-spacing: var(--letter-spacing-03);
     line-height: 1.875;
+    margin-top: 4px;
 }
+/* projects=gallery list border */
 .projects-gallery li {
-    border: 1px solid rgba(238, 238, 238, 1);
+    border: 1px solid var(--border-color);
 }
 
 /* footer section */
@@ -95,23 +160,29 @@ a:active {
     background-color: var(--dark-grey-color);
     padding: 60px 0;
 }
+/* general styles for footer list */
 .footer ul li {
     font-size: 14px;
-    letter-spacing: 0.03em;
     line-height: 1.7;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;   
 
 }
+/* link styles by title */
 .footer a[title] {
     color: rgba(255, 255, 255, 0.6);
-    ;
+    
+}
+.footer a[title]:hover {
+    color: var(--blue-color);
 }
 address {
     font-style: normal;  
-    color: var(--white-color);    
+    color: var(--white-color); 
 }
 .footer .logo-footer {
     color: var(--white-color);
     margin-bottom: 20px;
+    line-height: 1.2;
     display: block;
 }
