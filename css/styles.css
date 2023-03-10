@@ -6,7 +6,7 @@
      --letter-spacing-06: .06em;
 
     /* colors */
-    --font-color: rgba(33 33 33 / 1);
+     --font-color: rgba(33 33 33 / 1);
      --white-color: rgba(255 255 255 / 1);
      --blue-color: rgba(33 150 243 / 1);
      --light-grey-color: rgba(245 244 250 / 1);
@@ -62,7 +62,7 @@ color: var(--blue-color);
      color: var(--blue-color);
 }
 /* links style love/hate order */
- a {
+ a:focus {
      outline: var(--blue-color);
 }
  a:link, 
